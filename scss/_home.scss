@@ -1,0 +1,113 @@
+.hero {
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-family: $font-main;
+  padding: 4rem 2rem;
+  text-align: center;
+  h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    transition: transform $transition;
+    &:hover {
+      transform: scale(1.1) rotate(-2deg);
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+.rights, .laws {
+  padding: 3rem 2rem;
+  font-family: $font-main;
+  color: $text-color;
+  h2 {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    &:hover {
+      color: $accent-color;
+      cursor: pointer;
+    }
+  }
+  p, ul {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  ul {
+    list-style-type: square;
+    padding-left: 1.5rem;
+  }
+}
+
+.interactive {
+  padding: 3rem 2rem;
+  text-align: center;
+  h2 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  p {
+    margin-bottom: 2rem;
+  }
+  .icons {
+    @include flex-center;
+    gap: 3rem;
+    i {
+      font-size: 3rem;
+      color: $primary-color;
+      transition: transform $transition, color $transition;
+      &:hover {
+        color: $accent-color;
+        transform: translateY(-10px) scale(1.2);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.testimonials {
+  background-color: $secondary-color;
+  padding: 3rem 2rem;
+  blockquote {
+    font-style: italic;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 2rem;
+    &::before {
+      content: '\\201C';
+      font-size: 3rem;
+      color: $primary-color;
+      position: absolute;
+      left: 0;
+      top: -0.5rem;
+    }
+  }
+}
+
+.footer-cta {
+  background-color: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+  padding: 3rem 2rem;
+  h2 {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  a.btn-primary {
+    background-color: $accent-color;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: background-color $transition;
+    &:hover {
+      background-color: darken($accent-color, 10%);
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.about {
+  max-width: 700px;
+  margin: 3rem auto;
+  padding: 2rem;
+  font-family: $font-main;
+  color: $text-color;
+
+  h1 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+    text-indent: 1.5rem;
+    transition: color $transition;
+
+    &:hover {
+      color: $primary-color;
+      cursor: default;
+    }
+  }
+
+  @include responsive(md) {
+    padding: 1rem;
+    margin: 2rem auto;
+  }
+
+  @include responsive(sm) {
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+  }
+}
