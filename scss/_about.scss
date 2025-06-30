@@ -1,37 +1,81 @@
-.about {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 2rem;
+.about-section {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
   font-family: $font-main;
   color: $text-color;
 
   h1 {
+    font-size: 3rem;
     font-weight: 700;
-    text-align: center;
     margin-bottom: 2rem;
+    color: $primary-color;
+    text-align: center;
   }
 
   p {
-    font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.6;
-    text-align: justify;
-    text-indent: 1.5rem;
-    transition: color $transition;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    &:hover {
-      color: $primary-color;
-      cursor: default;
+  .about-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .icon-box {
+      flex: 1 1 200px;
+      background: $secondary-color;
+      padding: 2rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform $transition;
+
+      i {
+        font-size: 2.5rem;
+        color: $accent-color;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 0.8rem;
+        color: $primary-color;
+      }
+
+      p {
+        font-size: 1rem;
+        color: $text-color;
+      }
+
+      &:hover {
+        transform: translateY(-8px);
+        cursor: pointer;
+      }
     }
   }
 
-  @include responsive(md) {
-    padding: 1rem;
-    margin: 2rem auto;
-  }
-
   @include responsive(sm) {
-    margin: 1.5rem 1rem;
-    padding: 1rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    .about-icons {
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .icon-box {
+        max-width: 350px;
+        margin: 0 auto;
+      }
+    }
   }
 }
