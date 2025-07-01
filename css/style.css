@@ -176,7 +176,6 @@
 }
 .logo-group .nav-logo {
   height: 80px;
-  width: auto;
   object-fit: contain;
 }
 .logo-group .site-logo {
@@ -250,7 +249,6 @@
 }
 .about-section .logo-group .nav-logo {
   height: 80px;
-  width: auto;
   object-fit: contain;
 }
 .about-section .logo-group .site-logo {
@@ -319,7 +317,6 @@
 }
 .news-section .logo-group .nav-logo {
   height: 80px;
-  width: auto;
   object-fit: contain;
 }
 .news-section .logo-group .site-logo {
@@ -392,7 +389,6 @@
 }
 .contact-section .logo-group .nav-logo {
   height: 80px;
-  width: auto;
   object-fit: contain;
 }
 .contact-section .logo-group .site-logo {
