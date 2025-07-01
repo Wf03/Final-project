@@ -169,6 +169,22 @@
   cursor: pointer;
 }
 
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.logo-group .nav-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+.logo-group .site-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
+
 .about-section {
   max-width: 900px;
   margin: 4rem auto;
@@ -227,6 +243,21 @@
   transform: translateY(-8px);
   cursor: pointer;
 }
+.about-section .logo-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.about-section .logo-group .nav-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+.about-section .logo-group .site-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+}
 @media (max-width: 600px) {
   .about-section {
     margin: 2rem auto;
@@ -280,6 +311,21 @@
 .news-section .news-list .news-item:hover {
   transform: translateX(5px);
   cursor: pointer;
+}
+.news-section .logo-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.news-section .logo-group .nav-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+.news-section .logo-group .site-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
 }
 @media (max-width: 600px) {
   .news-section {
@@ -338,6 +384,21 @@
 }
 .contact-section .contact-form button:hover {
   background-color: #2b2d41;
+}
+.contact-section .logo-group {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.contact-section .logo-group .nav-logo {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+.contact-section .logo-group .site-logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
 }
 @media (max-width: 600px) {
   .contact-section {
